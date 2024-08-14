@@ -46,7 +46,7 @@ npm start
 - **TypeScript**: Utilizado para escrever a lógica do jogo com segurança de tipos. O TypeScript ajuda a evitar erros comuns e melhora a manutenção do código.
 - **JavaScript**: Manipula o DOM e fornece a interatividade necessária para o funcionamento do jogo, como a resposta a cliques em botões e a atualização da pontuação.
 
-# 👷 Autor
+# 🧑🏽‍💻 Autor
 
 * **Angelo Silvano** - *Front-End Developer* - [angelodesenvolvedor](https://github.com/angelodesenvolvedor)
   
