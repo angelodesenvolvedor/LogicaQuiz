@@ -52,4 +52,4 @@ npm start
   
 # 📄 Licença
 
-- Este projeto está sob a licença MIT - acesse os detalhes em [LICENSE.md](LICENSE.md).
+- Este projeto está sob a licença MIT - acesse os detalhes em [LICENSE.md](https://github.com/angelodesenvolvedor/LogicaQuiz/tree/master?tab=MIT-1-ov-file).
