@@ -93,4 +93,4 @@ Os testes verificam a funcionalidade do jogo, incluindo a lógica das perguntas,
   
 📄 **Licença**
 
-Este projeto está sob a licença MIT - acesse os detalhes em [LICENSE.md](LICENSE.md).
+- Este projeto está sob a licença MIT - acesse os detalhes em [LICENSE.md](LICENSE.md).
