@@ -13,7 +13,7 @@ O **Lógica Quiz** é um jogo educativo projetado para ajudar os usuários a pra
 - Conteúdo educativo sobre lógica proposicional, incluindo tautologia, contradição, contingência e equivalência.
 - Interface responsiva que se adapta a diferentes tamanhos de tela.
 
-⚙️ **Pré-requisitos**
+# ⚙️ Pré-requisitos
 
 Para instalar e rodar este projeto, você precisará dos seguintes pré-requisitos:
 
@@ -21,7 +21,7 @@ Para instalar e rodar este projeto, você precisará dos seguintes pré-requisit
 
 2. **npm ou yarn**: Gerenciador de pacotes para instalar as dependências. O npm vem com o Node.js, ou você pode optar por [yarn](https://yarnpkg.com/).
 
-🔨 **Guia de instalação**
+# 🔨 Guia de instalação
 
 Siga os passos abaixo para configurar o ambiente de desenvolvimento e executar o projeto:
 
