@@ -19,7 +19,6 @@ Para instalar e rodar este projeto, você precisará dos seguintes pré-requisit
 
 1. **Node.js**: Certifique-se de ter o Node.js instalado. Você pode baixar e instalar a partir de [nodejs.org](https://nodejs.org/).
 
-2. **npm ou yarn**: Gerenciador de pacotes para instalar as dependências. O npm vem com o Node.js, ou você pode optar por [yarn](https://yarnpkg.com/).
 
 # 🔨 Guia de instalação
 
