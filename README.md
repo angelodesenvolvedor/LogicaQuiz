@@ -1,4 +1,3 @@
-
 # Lógica Quiz
 
 **Uma aplicação interativa para testar e aprimorar conhecimentos em lógica proposicional.**
@@ -41,53 +40,24 @@ Se estiver usando npm:
 npm install
 ```
 
-Se estiver usando yarn:
-
-```bash
-yarn install
-```
 
 **Passo 3:** Inicie o servidor de desenvolvimento.
-
-Se estiver usando npm:
 
 ```bash
 npm start
 ```
 
-Se estiver usando yarn:
-
-```bash
-yarn start
-```
-
 O projeto estará disponível em `http://localhost:3000`.
 
-🛠️ **Executando os testes**
-
-Para executar os testes automatizados, use o seguinte comando:
-
-Se estiver usando npm:
-
-```bash
-npm test
-```
-
-Se estiver usando yarn:
-
-```bash
-yarn test
-```
-
-Os testes verificam a funcionalidade do jogo, incluindo a lógica das perguntas, sistema de pontuação e feedback.
 
 📦 **Tecnologias usadas**
 
-- HTML: Estrutura básica e layout da aplicação.
-- CSS: Estilização da interface e design responsivo.
-- TypeScript/JavaScript: Lógica do jogo, manipulação do DOM e interatividade.
+- HTML: Define a estrutura e o layout da aplicação, incluindo elementos como botões, áreas de perguntas e feedback.
+- CSS: Responsável pela estilização da interface do usuário, garantindo que a aplicação tenha uma aparência moderna e seja responsiva a diferentes tamanhos de tela.
+- TypeScript: Utilizado para escrever a lógica do jogo com segurança de tipos. O TypeScript ajuda a evitar erros comuns e melhora a manutenção do código.
+- JavaScript: Manipula o DOM e fornece a interatividade necessária para o funcionamento do jogo, como a resposta a cliques em botões e a atualização da pontuação.
 
-👷 **Autores**
+👷 **Autor**
 
 - **Ângelo Silvano** - Desenvolvedor principal - [@angelo-silvano](https://github.com/angelo-silvano)
   
