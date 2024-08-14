@@ -16,50 +16,27 @@ O **Lógica Quiz** é um projeto desenvolvido como parte da disciplina de **Mate
 
 # ⚙️ Pré-requisitos
 
-Para instalar e rodar este projeto, você precisará dos seguintes pré-requisitos:
+Antes de começar, certifique-se de ter o seguinte instalado em seu sistema:
 
-1. **Node.js**: Certifique-se de ter o Node.js instalado. Você pode baixar e instalar a partir de [nodejs.org](https://nodejs.org/).
-2. **npm ou yarn**: Gerenciador de pacotes para instalar as dependências. O npm vem com o Node.js, ou você pode optar por [yarn](https://yarnpkg.com/).
+- [Node.js](https://nodejs.org/en)
+- [npm](https://www.npmjs.com/)
 
 # 🔨 Guia de instalação
 
-Siga os passos abaixo para configurar o ambiente de desenvolvimento e executar o projeto:
-
-**Passo 1:** Clone o repositório para sua máquina local.
-
+**Passo 1: Clonar o repositório**
 ```bash
 git clone https://github.com/angelodesenvolvedor/LogicaQuiz.git
-cd logica-quiz
+cd todolist
 ```
 
-**Passo 2:** Instale as dependências do projeto.
-
-Se estiver usando **npm**:
-
+**Passo 2: Instalar dependências**
 ```bash
-npm install
+npm install   
 ```
 
-Se estiver usando **yarn**:
-
+**Passo 3: Rodar o projeto**
 ```bash
-yarn install
-```
-
-
-**Passo 3:** Inicie o servidor de desenvolvimento.
-
-
-Se estiver usando **npm**:
-
-```bash
-npm start
-```
-
-Se estiver usando **yarn**:
-
-```bash
-yarn start
+npm start   
 ```
 
 # 📦 Tecnologias usadas
