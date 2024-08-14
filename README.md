@@ -71,7 +71,7 @@ yarn start
 
 # 👷 Autor
 
-- **Ângelo Silvano** - Desenvolvedor principal - [@angelo-silvano](https://github.com/angelo-silvano)
+* **Angelo Silvano** - *Front-End Developer* - [angelodesenvolvedor](https://github.com/angelodesenvolvedor)
   
 # 📄 Licença
 
