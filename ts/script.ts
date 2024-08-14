@@ -19,6 +19,51 @@ let db: IDBDatabase | null = null;
 
 // Array de perguntas
 const questions = [
+    // Fácil
+    {
+        question: 'Qual é a definição de uma tautologia?',
+        options: [
+            'A) Uma proposição que é verdadeira em todos os casos possíveis', 
+            'B) Uma proposição que é falsa em todos os casos possíveis', 
+            'C) Uma proposição que é verdadeira apenas em alguns casos', 
+            'D) Uma proposição que pode ser verdadeira ou falsa dependendo do contexto'
+        ],
+        answer: 0,
+        difficulty: 'easy'
+    },
+    {
+        question: 'O que é uma proposição contingente?',
+        options: [
+            'A) Uma proposição que pode ser verdadeira ou falsa dependendo do caso', 
+            'B) Uma proposição que é sempre verdadeira', 
+            'C) Uma proposição que é sempre falsa', 
+            'D) Uma proposição que é verdadeira em todos os casos possíveis'
+        ],
+        answer: 0,
+        difficulty: 'easy'
+    },
+    {
+        question: 'Qual é a definição de uma contradição?',
+        options: [
+            'A) Uma proposição que é falsa em todos os casos possíveis', 
+            'B) Uma proposição que é verdadeira em todos os casos possíveis', 
+            'C) Uma proposição que é verdadeira em alguns casos e falsa em outros', 
+            'D) Uma proposição que não pode ser determinada como verdadeira ou falsa'
+        ],
+        answer: 0,
+        difficulty: 'easy'
+    },
+    {
+        question: 'O que caracteriza uma prova direta?',
+        options: [
+            'A) Demonstrar que a conclusão é verdadeira assumindo que a premissa é verdadeira', 
+            'B) Mostrar que a conclusão é falsa para provar que a proposição é verdadeira', 
+            'C) Provar que a proposição é verdadeira em todos os casos possíveis', 
+            'D) Usar uma contradição para provar que a proposição é verdadeira'
+        ],
+        answer: 0,
+        difficulty: 'easy'
+    },
     {
         question: 'Qual é a forma correta da negação da proposição "P ou Q"?',
         options: [
@@ -27,77 +72,8 @@ const questions = [
             'C) P e Q', 
             'D) P ou Não Q'
         ],
-        answer: 0
-    },
-    {
-        question: 'Quando a proposição "Se P então Q" é considerada verdadeira?',
-        options: [
-            'A) Quando P é verdadeiro e Q é verdadeiro', 
-            'B) Quando P é falso e Q é verdadeiro', 
-            'C) Quando P é verdadeiro e Q é falso', 
-            'D) Quando P é falso e Q é falso'
-        ],
-        answer: 1
-    },
-    {
-        question: 'Qual é a forma equivalente de "P e (Q ou R)"?',
-        options: [
-            'A) (P e Q) ou (P e R)', 
-            'B) P e Q e R', 
-            'C) P e (Q e R)', 
-            'D) (P ou Q) e (P ou R)'
-        ],
-        answer: 0
-    },
-    {
-        question: 'Como se chama uma proposição que é verdadeira em todos os casos possíveis?',
-        options: [
-            'A) Tautologia', 
-            'B) Contradição', 
-            'C) Contingência', 
-            'D) Equivalência'
-        ],
-        answer: 0
-    },
-    {
-        question: 'Qual é a negação de "Se P então Q"?',
-        options: [
-            'A) P e Não Q', 
-            'B) Não P ou Q', 
-            'C) Não P e Não Q', 
-            'D) P ou Q'
-        ],
-        answer: 0
-    },
-    {
-        question: 'Qual proposição é equivalente a "P ou (Q e R)"?',
-        options: [
-            'A) (P ou Q) e (P ou R)', 
-            'B) P ou Q ou R', 
-            'C) (P e Q) ou (P e R)', 
-            'D) (P e Q) ou R'
-        ],
-        answer: 0
-    },
-    {
-        question: 'Se P e Q são ambas falsas, qual é o valor da proposição "P ou Q"?',
-        options: [
-            'A) Verdadeira', 
-            'B) Falsa', 
-            'C) Indefinida', 
-            'D) Não pode ser determinado'
-        ],
-        answer: 1
-    },
-    {
-        question: 'Qual é o valor da proposição "Não (P e Q)" quando P é verdadeiro e Q é falso?',
-        options: [
-            'A) Verdadeiro', 
-            'B) Falso', 
-            'C) Indefinido', 
-            'D) Não pode ser determinado'
-        ],
-        answer: 0
+        answer: 0,
+        difficulty: 'easy'
     },
     {
         question: 'Qual é a forma correta da proposição "P e Não (Q ou R)"?',
@@ -107,17 +83,31 @@ const questions = [
             'C) P e (Não Q ou Não R)', 
             'D) Não P e (Q ou R)'
         ],
-        answer: 0
+        answer: 0,
+        difficulty: 'easy'
+    },
+    // Intermediário
+    {
+        question: 'Qual é a negação de "Se P então Q"?',
+        options: [
+            'A) P e Não Q', 
+            'B) Não P ou Q', 
+            'C) Não P e Não Q', 
+            'D) P ou Q'
+        ],
+        answer: 0,
+        difficulty: 'medium'
     },
     {
-        question: 'Se P é uma tautologia, qual é o valor da proposição "P ou Q"?',
+        question: 'Quando a proposição "Se P então Q" é considerada verdadeira?',
         options: [
-            'A) Verdadeiro', 
-            'B) Falso', 
-            'C) Indefinido', 
-            'D) Depende do valor de Q'
+            'A) Quando P é verdadeiro e Q é verdadeiro', 
+            'B) Quando P é falso e Q é verdadeiro', 
+            'C) Quando P é verdadeiro e Q é falso', 
+            'D) Quando P é falso e Q é falso'
         ],
-        answer: 0
+        answer: 1,
+        difficulty: 'medium'
     },
     {
         question: 'Qual proposição é equivalente a "Não (P e Não Q)"?',
@@ -127,7 +117,97 @@ const questions = [
             'C) Não P e Q', 
             'D) Não P ou Não Q'
         ],
-        answer: 0
+        answer: 0,
+        difficulty: 'medium'
+    },
+    {
+        question: 'Qual é a forma equivalente de "P e (Q ou R)"?',
+        options: [
+            'A) (P e Q) ou (P e R)', 
+            'B) P e Q e R', 
+            'C) P e (Q e R)', 
+            'D) (P ou Q) e (P ou R)'
+        ],
+        answer: 0,
+        difficulty: 'medium'
+    },
+    {
+        question: 'Qual é a forma equivalente de "Não (P ou Q) e R"?',
+        options: [
+            'A) (Não P e Não Q) e R', 
+            'B) (Não P e Não Q) ou R', 
+            'C) Não P e (Não Q e R)', 
+            'D) Não (P ou Q) ou R'
+        ],
+        answer: 0,
+        difficulty: 'medium'
+    },
+    // Avançado
+    {
+        question: 'Se P é uma tautologia, qual é o valor da proposição "P ou Q"?',
+        options: [
+            'A) Verdadeiro', 
+            'B) Falso', 
+            'C) Indefinido', 
+            'D) Depende do valor de Q'
+        ],
+        answer: 0,
+        difficulty: 'hard'
+    },
+    {
+        question: 'Qual é a prova por contraposição de "Se P então Q"?',
+        options: [
+            'A) Mostrar que se Não Q então Não P', 
+            'B) Mostrar que se P então Não Q', 
+            'C) Mostrar que se Não P então Q', 
+            'D) Mostrar que se Q então P'
+        ],
+        answer: 0,
+        difficulty: 'hard'
+    },
+    {
+        question: 'Qual é a prova por contradição para provar que "P ou Q" é verdadeiro?',
+        options: [
+            'A) Suponha que P e Q são falsos e chegue a uma contradição', 
+            'B) Suponha que P é verdadeiro e chegue a uma contradição', 
+            'C) Suponha que Q é verdadeiro e chegue a uma contradição', 
+            'D) Suponha que P é falso e chegue a uma contradição'
+        ],
+        answer: 0,
+        difficulty: 'hard'
+    },
+    {
+        question: 'Qual é a prova por casos de que "P ou Q" é verdadeiro?',
+        options: [
+            'A) Mostrar que P é verdadeiro ou Q é verdadeiro em dois casos distintos', 
+            'B) Mostrar que P e Q são ambos verdadeiros', 
+            'C) Mostrar que P é falso ou Q é falso', 
+            'D) Mostrar que P é verdadeiro e Q é falso'
+        ],
+        answer: 0,
+        difficulty: 'hard'
+    },
+    {
+        question: 'Qual é a forma equivalente de "P se e somente se Q"?',
+        options: [
+            'A) (P e Q) ou (Não P e Não Q)', 
+            'B) (P e Q) e (Não P e Q)', 
+            'C) (P ou Q) e (P ou Não Q)', 
+            'D) Não P ou Q'
+        ],
+        answer: 0,
+        difficulty: 'hard'
+    },
+    {
+        question: 'Qual é a forma equivalente de "P e Não (Q ou R)"?',
+        options: [
+            'A) (P e Não Q e Não R)', 
+            'B) (P e Não Q) ou (P e Não R)', 
+            'C) P e (Não Q ou Não R)', 
+            'D) Não P ou (Q e R)'
+        ],
+        answer: 0,
+        difficulty: 'hard'
     },
     {
         question: 'Como se chama uma proposição que é falsa em todos os casos possíveis?',
@@ -137,37 +217,8 @@ const questions = [
             'C) Contingência', 
             'D) Equivalência'
         ],
-        answer: 0
-    },
-    {
-        question: 'Qual é a forma equivalente de "Não (P e Q) ou R"?',
-        options: [
-            'A) (Não P ou Não Q) ou R', 
-            'B) Não P ou (Não Q e R)', 
-            'C) Não (P e Q) e R', 
-            'D) Não P ou Não Q ou R'
-        ],
-        answer: 0
-    },
-    {
-        question: 'Se P é uma proposição contingente, qual é o valor de "P ou Não P"?',
-        options: [
-            'A) Verdadeiro', 
-            'B) Falso', 
-            'C) Indefinido', 
-            'D) Não pode ser determinado'
-        ],
-        answer: 0
-    },
-    {
-        question: 'Qual proposição é equivalente a "P se e somente se Q"?',
-        options: [
-            'A) (P e Q) ou (Não P e Não Q)', 
-            'B) P ou Q', 
-            'C) P e Q', 
-            'D) Não P ou Q'
-        ],
-        answer: 0
+        answer: 0,
+        difficulty: 'hard'
     }
 ];
 
