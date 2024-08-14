@@ -2,7 +2,7 @@
 
 **Uma aplicação interativa para testar e aprimorar conhecimentos em lógica proposicional.**
 
-🔥 **Introdução**
+# 🔥 Introdução
 
 O **Lógica Quiz** é um jogo educativo projetado para ajudar os usuários a praticar lógica proposicional de forma divertida e envolvente. O objetivo principal é fornecer um ambiente interativo onde os jogadores podem responder a perguntas de lógica e receber feedback imediato sobre suas respostas.
 
@@ -50,7 +50,7 @@ npm start
 O projeto estará disponível em `http://localhost:3000`.
 
 
-📦 **Tecnologias usadas**
+# 📦 Tecnologias usadas
 
 - HTML: Define a estrutura e o layout da aplicação, incluindo elementos como botões, áreas de perguntas e feedback.
 - CSS: Responsável pela estilização da interface do usuário, garantindo que a aplicação tenha uma aparência moderna e seja responsiva a diferentes tamanhos de tela.
