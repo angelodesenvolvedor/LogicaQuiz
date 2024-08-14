@@ -7,7 +7,7 @@
 
 O **Lógica Quiz** é um projeto desenvolvido como parte da disciplina de **Matemática Discreta** do curso de **Bacharelado em Tecnologia da Informação**. Trata-se de um jogo educativo que envolve lógica, onde os usuários podem aprimorar seu raciocínio lógico através de perguntas sobre lógica proposicional. O objetivo principal é fornecer uma plataforma interativa para praticar e entender conceitos fundamentais de lógica.
 
-**Funcionalidades:**
+**✅Funcionalidades:**
 - Perguntas de múltipla escolha em três níveis de dificuldade: fácil, intermediário e avançado.
 - Feedback imediato sobre respostas corretas e incorretas.
 - Sistema de pontuação com um ranking para comparar resultados.
