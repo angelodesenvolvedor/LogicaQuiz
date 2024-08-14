@@ -28,7 +28,7 @@ Siga os passos abaixo para configurar o ambiente de desenvolvimento e executar o
 **Passo 1:** Clone o repositório para sua máquina local.
 
 ```bash
-git clone https://github.com/seuusuario/logica-quiz.git
+git clone https://github.com/angelodesenvolvedor/LogicaQuiz.git
 cd logica-quiz
 ```
 
