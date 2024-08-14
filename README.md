@@ -83,9 +83,9 @@ Os testes verificam a funcionalidade do jogo, incluindo a lógica das perguntas,
 
 📦 **Tecnologias usadas**
 
-
-
-Para badges e ícones, visite [GitHub Markdown Badges](https://github.com/Ileriayo/markdown-badges).
+- HTML: Estrutura básica e layout da aplicação.
+- CSS: Estilização da interface e design responsivo.
+- TypeScript/JavaScript: Lógica do jogo, manipulação do DOM e interatividade.
 
 👷 **Autores**
 
