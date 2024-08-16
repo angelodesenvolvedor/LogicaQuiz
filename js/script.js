@@ -18,206 +18,208 @@ let timer = null;
 let db = null;
 // Array de perguntas
 const questions = [
-    // Fácil
+    // Nível Fácil
     {
-        question: 'Qual é a definição de uma tautologia?',
+        question: 'O que é uma proposição em lógica proposicional?',
         options: [
-            'A) Uma proposição que é verdadeira em todos os casos possíveis',
-            'B) Uma proposição que é falsa em todos os casos possíveis',
-            'C) Uma proposição que é verdadeira apenas em alguns casos',
-            'D) Uma proposição que pode ser verdadeira ou falsa dependendo do contexto'
+            'A) Uma afirmação que pode ser verdadeira ou falsa',
+            'B) Uma equação matemática',
+            'C) Um tipo de função',
+            'D) Uma regra de inferência'
         ],
-        answer: 0,
-        difficulty: 'easy'
+        answer: 0
     },
     {
-        question: 'O que é uma proposição contingente?',
+        question: 'Qual é o símbolo usado para a negação de uma proposição?',
         options: [
-            'A) Uma proposição que pode ser verdadeira ou falsa dependendo do caso',
-            'B) Uma proposição que é sempre verdadeira',
-            'C) Uma proposição que é sempre falsa',
-            'D) Uma proposição que é verdadeira em todos os casos possíveis'
+            'A) ∧',
+            'B) ∨',
+            'C) ¬',
+            'D) ⇒'
         ],
-        answer: 0,
-        difficulty: 'easy'
+        answer: 2
     },
     {
-        question: 'Qual é a definição de uma contradição?',
+        question: 'Qual é o valor lógico da proposição P ∨ Q quando P é falso e Q é verdadeiro?',
         options: [
-            'A) Uma proposição que é falsa em todos os casos possíveis',
-            'B) Uma proposição que é verdadeira em todos os casos possíveis',
-            'C) Uma proposição que é verdadeira em alguns casos e falsa em outros',
-            'D) Uma proposição que não pode ser determinada como verdadeira ou falsa'
+            'A) Verdadeiro',
+            'B) Falso',
+            'C) Indeterminado',
+            'D) Não aplicável'
         ],
-        answer: 0,
-        difficulty: 'easy'
+        answer: 0
     },
     {
-        question: 'O que caracteriza uma prova direta?',
+        question: 'Qual é a forma equivalente de ¬(P ∧ Q)?',
         options: [
-            'A) Demonstrar que a conclusão é verdadeira assumindo que a premissa é verdadeira',
-            'B) Mostrar que a conclusão é falsa para provar que a proposição é verdadeira',
-            'C) Provar que a proposição é verdadeira em todos os casos possíveis',
-            'D) Usar uma contradição para provar que a proposição é verdadeira'
+            'A) ¬P ∨ ¬Q',
+            'B) ¬P ∧ ¬Q',
+            'C) P ∨ Q',
+            'D) P ∧ ¬Q'
         ],
-        answer: 0,
-        difficulty: 'easy'
+        answer: 0
     },
     {
-        question: 'Qual é a forma correta da negação da proposição "P ou Q"?',
+        question: 'Qual das seguintes proposições é uma tautologia?',
         options: [
-            'A) Não P e Não Q',
-            'B) Não P ou Não Q',
-            'C) P e Q',
-            'D) P ou Não Q'
+            'A) P ∨ ¬P',
+            'B) P ∧ ¬P',
+            'C) P ∧ Q',
+            'D) ¬P ∧ ¬Q'
         ],
-        answer: 0,
-        difficulty: 'easy'
+        answer: 0
+    },
+    // Nível Intermediário
+    {
+        question: 'Construa a tabela-verdade para a proposição P ∧ (Q ∨ R). Qual é o valor lógico quando P é verdadeiro, Q é falso e R é verdadeiro?',
+        options: [
+            'A) Verdadeiro',
+            'B) Falso',
+            'C) Indeterminado',
+            'D) Não aplicável'
+        ],
+        answer: 0
     },
     {
-        question: 'Qual é a forma correta da proposição "P e Não (Q ou R)"?',
+        question: 'Qual é a equivalência lógica de P ∧ (Q ∨ R)?',
         options: [
-            'A) P e Não Q e Não R',
-            'B) Não P ou (Q e R)',
-            'C) P e (Não Q ou Não R)',
-            'D) Não P e (Q ou R)'
+            'A) (P ∧ Q) ∨ (P ∧ R)',
+            'B) (P ∨ Q) ∧ (P ∨ R)',
+            'C) (P ∧ Q) ∧ (P ∧ R)',
+            'D) (P ∨ Q) ∨ (P ∨ R)'
         ],
-        answer: 0,
-        difficulty: 'easy'
-    },
-    // Intermediário
-    {
-        question: 'Qual é a negação de "Se P então Q"?',
-        options: [
-            'A) P e Não Q',
-            'B) Não P ou Q',
-            'C) Não P e Não Q',
-            'D) P ou Q'
-        ],
-        answer: 0,
-        difficulty: 'medium'
+        answer: 0
     },
     {
-        question: 'Quando a proposição "Se P então Q" é considerada verdadeira?',
+        question: 'A proposição P ↔ Q é equivalente a qual das seguintes expressões?',
         options: [
-            'A) Quando P é verdadeiro e Q é verdadeiro',
-            'B) Quando P é falso e Q é verdadeiro',
-            'C) Quando P é verdadeiro e Q é falso',
-            'D) Quando P é falso e Q é falso'
+            'A) (P ∧ Q) ∨ (¬P ∧ ¬Q)',
+            'B) (P ∨ Q) ∧ (¬P ∨ ¬Q)',
+            'C) (P ∧ ¬Q) ∨ (¬P ∧ Q)',
+            'D) P ∨ Q'
         ],
-        answer: 1,
-        difficulty: 'medium'
+        answer: 0
     },
     {
-        question: 'Qual proposição é equivalente a "Não (P e Não Q)"?',
+        question: 'Qual é o valor lógico da proposição ¬(P ∧ Q) quando P é verdadeiro e Q é verdadeiro?',
         options: [
-            'A) Não P ou Q',
-            'B) P ou Q',
-            'C) Não P e Q',
-            'D) Não P ou Não Q'
+            'A) Verdadeiro',
+            'B) Falso',
+            'C) Indeterminado',
+            'D) Não aplicável'
         ],
-        answer: 0,
-        difficulty: 'medium'
+        answer: 1
     },
     {
-        question: 'Qual é a forma equivalente de "P e (Q ou R)"?',
+        question: 'Qual proposição é equivalente a ¬(P ∨ Q)?',
         options: [
-            'A) (P e Q) ou (P e R)',
-            'B) P e Q e R',
-            'C) P e (Q e R)',
-            'D) (P ou Q) e (P ou R)'
+            'A) ¬P ∧ ¬Q',
+            'B) ¬P ∨ ¬Q',
+            'C) P ∧ Q',
+            'D) P ∨ ¬Q'
         ],
-        answer: 0,
-        difficulty: 'medium'
+        answer: 0
+    },
+    // Nível Avançado
+    {
+        question: 'Qual é a equivalência lógica de P → Q?',
+        options: [
+            'A) ¬P ∨ Q',
+            'B) P ∧ ¬Q',
+            'C) ¬P ∧ Q',
+            'D) P ∨ ¬Q'
+        ],
+        answer: 0
     },
     {
-        question: 'Qual é a forma equivalente de "Não (P ou Q) e R"?',
+        question: 'Qual das seguintes proposições é equivalente a ¬P ∨ (Q ∧ R)?',
         options: [
-            'A) (Não P e Não Q) e R',
-            'B) (Não P e Não Q) ou R',
-            'C) Não P e (Não Q e R)',
-            'D) Não (P ou Q) ou R'
+            'A) (¬P ∨ Q) ∧ (¬P ∨ R)',
+            'B) ¬P ∧ (Q ∨ R)',
+            'C) (¬P ∧ Q) ∨ (¬P ∧ R)',
+            'D) ¬(P ∨ (Q ∧ R))'
         ],
-        answer: 0,
-        difficulty: 'medium'
+        answer: 0
     },
-    // Avançado
     {
-        question: 'Se P é uma tautologia, qual é o valor da proposição "P ou Q"?',
+        question: 'Qual proposição é equivalente a "P ↔ Q"?',
+        options: [
+            'A) (P ∧ Q) ∨ (¬P ∧ ¬Q)',
+            'B) P ∨ Q',
+            'C) P ∧ Q',
+            'D) ¬P ∨ Q'
+        ],
+        answer: 0
+    },
+    {
+        question: 'Se P é uma proposição contingente, qual é o valor de "P ou Não P"?',
         options: [
             'A) Verdadeiro',
             'B) Falso',
             'C) Indefinido',
-            'D) Depende do valor de Q'
+            'D) Não pode ser determinado'
         ],
-        answer: 0,
-        difficulty: 'hard'
+        answer: 0
     },
     {
-        question: 'Qual é a prova por contraposição de "Se P então Q"?',
+        question: 'Qual proposição é equivalente a "P se e somente se Q"?',
         options: [
-            'A) Mostrar que se Não Q então Não P',
-            'B) Mostrar que se P então Não Q',
-            'C) Mostrar que se Não P então Q',
-            'D) Mostrar que se Q então P'
+            'A) (P ∧ Q) ∨ (¬P ∧ ¬Q)',
+            'B) P ∨ Q',
+            'C) P ∧ Q',
+            'D) ¬P ∨ Q'
         ],
-        answer: 0,
-        difficulty: 'hard'
+        answer: 0
     },
     {
-        question: 'Qual é a prova por contradição para provar que "P ou Q" é verdadeiro?',
+        question: 'Qual é a forma equivalente de "P → (Q ∧ R)"?',
         options: [
-            'A) Suponha que P e Q são falsos e chegue a uma contradição',
-            'B) Suponha que P é verdadeiro e chegue a uma contradição',
-            'C) Suponha que Q é verdadeiro e chegue a uma contradição',
-            'D) Suponha que P é falso e chegue a uma contradição'
+            'A) (P → Q) ∧ (P → R)',
+            'B) P ∧ (Q ∨ R)',
+            'C) (P ∧ Q) → R',
+            'D) (P → Q) ∨ R'
         ],
-        answer: 0,
-        difficulty: 'hard'
+        answer: 0
     },
     {
-        question: 'Qual é a prova por casos de que "P ou Q" é verdadeiro?',
+        question: 'Qual é a equivalência lógica de ¬(P ∧ ¬Q)?',
         options: [
-            'A) Mostrar que P é verdadeiro ou Q é verdadeiro em dois casos distintos',
-            'B) Mostrar que P e Q são ambos verdadeiros',
-            'C) Mostrar que P é falso ou Q é falso',
-            'D) Mostrar que P é verdadeiro e Q é falso'
+            'A) ¬P ∨ Q',
+            'B) P ∨ ¬Q',
+            'C) P ∨ Q',
+            'D) ¬P ∨ ¬Q'
         ],
-        answer: 0,
-        difficulty: 'hard'
+        answer: 0
     },
     {
-        question: 'Qual é a forma equivalente de "P se e somente se Q"?',
+        question: 'Qual é a forma equivalente de "¬(P ∨ Q) ∧ R"?',
         options: [
-            'A) (P e Q) ou (Não P e Não Q)',
-            'B) (P e Q) e (Não P e Q)',
-            'C) (P ou Q) e (P ou Não Q)',
-            'D) Não P ou Q'
+            'A) (¬P ∧ ¬Q) ∧ R',
+            'B) ¬(P ∨ Q ∨ R)',
+            'C) (¬P ∧ R) ∨ (¬Q ∧ R)',
+            'D) ¬(P ∧ Q) ∧ R'
         ],
-        answer: 0,
-        difficulty: 'hard'
+        answer: 0
     },
     {
-        question: 'Qual é a forma equivalente de "P e Não (Q ou R)"?',
+        question: 'Dada a proposição "P → Q" e "Q → R", qual é a equivalência lógica de "P → R"?',
         options: [
-            'A) (P e Não Q e Não R)',
-            'B) (P e Não Q) ou (P e Não R)',
-            'C) P e (Não Q ou Não R)',
-            'D) Não P ou (Q e R)'
+            'A) (P ∧ Q) → R',
+            'B) P ∧ (Q → R)',
+            'C) (P → Q) ∧ (Q → R)',
+            'D) P → (Q ∧ R)'
         ],
-        answer: 0,
-        difficulty: 'hard'
+        answer: 0
     },
     {
-        question: 'Como se chama uma proposição que é falsa em todos os casos possíveis?',
+        question: 'Qual é a equivalência de "¬(P ∧ Q) ∨ (R ∧ ¬S)"?',
         options: [
-            'A) Contradição',
-            'B) Tautologia',
-            'C) Contingência',
-            'D) Equivalência'
+            'A) (¬P ∨ ¬Q) ∨ (R ∧ ¬S)',
+            'B) (¬P ∨ ¬Q) ∧ (R ∨ ¬S)',
+            'C) (¬P ∨ ¬Q) ∧ (R ∧ ¬S)',
+            'D) ¬(P ∧ (Q ∨ R)) ∨ ¬S'
         ],
-        answer: 0,
-        difficulty: 'hard'
+        answer: 0
     }
 ];
 // Inicializar estado do jogo
