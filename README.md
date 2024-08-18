@@ -43,8 +43,6 @@ npm install typescript -D
 npx tsc --watch
 ```
 
-**Observação:** Para projetos TypeScript, não é utilizado o comando `npm start`. O comando `npx tsc --watch` compila o TypeScript e observa mudanças no código.
-
 ## 📂 Estrutura de Pastas
 
 ```
