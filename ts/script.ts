@@ -224,6 +224,7 @@ const questions = [
     }
 ];
 
+
 // Estrutura para armazenar o estado do jogo e ranking
 interface GameState {
     ranking: { name: string; score: number }[];
