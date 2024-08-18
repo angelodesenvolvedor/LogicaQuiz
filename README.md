@@ -61,7 +61,8 @@ npx tsc --watch
 - **`/js`**: Contém o arquivo de script `script.js` para a lógica do jogo.
 - **`index.html`**: Arquivo principal HTML da aplicação.
   
-![Tela de Login](![image](https://github.com/user-attachments/assets/272c182b-843b-4566-8e01-765b9cef1211))  
+![Tela de Login]![image](https://github.com/user-attachments/assets/0b2f3098-b19d-4bb0-9cc4-6d034858de06)
+
 *Tela de Login: A tela onde os usuários inserem seu nome e PIN para acessar o jogo.*
 
 ![Tela de Jogo](./image/tela-jogo.png)  
