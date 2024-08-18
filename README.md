@@ -55,6 +55,14 @@ npx tsc --watch
         script.js
     index.html
 ```
+![Tela de Login](./image/tela-login.png)  
+*Tela de Login: A tela onde os usuários inserem seu nome e PIN para acessar o jogo.*
+
+![Tela de Jogo](./image/tela-jogo.png)  
+*Tela de Jogo: Exibe a pergunta atual e opções de resposta, além de mostrar a pontuação e o tempo restante.*
+
+![Tela de Ranking](./image/tela-ranking.png)  
+*Tela de Ranking: Mostra a classificação dos jogadores com base em suas pontuações.*
 
 - **`/css`**: Contém o arquivo de estilo `style.css` para a aparência da aplicação.
 - **`/image`**: Contém imagens usadas no projeto, como o ícone `logomarca.png`.
