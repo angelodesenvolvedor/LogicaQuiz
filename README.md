@@ -55,7 +55,13 @@ npx tsc --watch
         script.js
     index.html
 ```
-![Tela de Login](./image/tela-login.png)  
+
+- **`/css`**: Contém o arquivo de estilo `style.css` para a aparência da aplicação.
+- **`/image`**: Contém imagens usadas no projeto, como o ícone `logomarca.png`.
+- **`/js`**: Contém o arquivo de script `script.js` para a lógica do jogo.
+- **`index.html`**: Arquivo principal HTML da aplicação.
+  
+![Tela de Login](![image](https://github.com/user-attachments/assets/272c182b-843b-4566-8e01-765b9cef1211))  
 *Tela de Login: A tela onde os usuários inserem seu nome e PIN para acessar o jogo.*
 
 ![Tela de Jogo](./image/tela-jogo.png)  
@@ -64,10 +70,6 @@ npx tsc --watch
 ![Tela de Ranking](./image/tela-ranking.png)  
 *Tela de Ranking: Mostra a classificação dos jogadores com base em suas pontuações.*
 
-- **`/css`**: Contém o arquivo de estilo `style.css` para a aparência da aplicação.
-- **`/image`**: Contém imagens usadas no projeto, como o ícone `logomarca.png`.
-- **`/js`**: Contém o arquivo de script `script.js` para a lógica do jogo.
-- **`index.html`**: Arquivo principal HTML da aplicação.
 
 ## 📦 Tecnologias usadas
 
