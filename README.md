@@ -65,15 +65,15 @@ npx tsc --watch
 
 ### Tela de Login
 ![Tela de Login](https://github.com/user-attachments/assets/0b2f3098-b19d-4bb0-9cc4-6d034858de06)
-*A tela onde os usuários inserem seu nome e PIN para acessar o jogo.*
+ *A tela onde os usuários inserem seu nome e PIN para acessar o jogo.*
 
 ### Tela de Jogo
 ![Tela de Jogo](https://github.com/user-attachments/assets/9da865fb-05c6-4cee-bcc6-497efa20ee34)
-*Exibe a pergunta atual e opções de resposta, além de mostrar a pontuação e o tempo restante.*
+ *Exibe a pergunta atual e opções de resposta, além de mostrar a pontuação e o tempo restante.*
 
 ### Tela de Ranking
 ![Tela de Ranking](https://github.com/user-attachments/assets/6be655ab-915f-45e0-9ccf-f2406d5fb9f8)
-*Mostra a classificação dos jogadores com base em suas pontuações.*
+  *Mostra a classificação dos jogadores com base em suas pontuações.*
 
 ## 📦 Tecnologias usadas
 
