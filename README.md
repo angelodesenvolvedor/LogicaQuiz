@@ -26,7 +26,7 @@ Antes de começar, certifique-se de ter o seguinte instalado em seu sistema:
 **Passo 1: Clonar o repositório**
 ```bash
 git clone https://github.com/angelodesenvolvedor/LogicaQuiz.git
-cd todolist
+cd LogicaQuiz
 ```
 
 **Passo 2: Instalar dependências**
