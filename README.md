@@ -65,10 +65,13 @@ npx tsc --watch
 
 *Tela de Login: A tela onde os usuários inserem seu nome e PIN para acessar o jogo.*
 
-![Tela de Jogo](./image/tela-jogo.png)  
+![Tela de Jogo]![image](https://github.com/user-attachments/assets/9da865fb-05c6-4cee-bcc6-497efa20ee34)
+
 *Tela de Jogo: Exibe a pergunta atual e opções de resposta, além de mostrar a pontuação e o tempo restante.*
 
-![Tela de Ranking](./image/tela-ranking.png)  
+![Tela de Ranking] ![image](https://github.com/user-attachments/assets/6be655ab-915f-45e0-9ccf-f2406d5fb9f8)
+ 
+
 *Tela de Ranking: Mostra a classificação dos jogadores com base em suas pontuações.*
 
 
