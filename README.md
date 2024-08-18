@@ -64,8 +64,8 @@ npx tsc --watch
 ## 🖼️ Imagens do Projeto
 
 ### Tela de Login
-![Tela de Login](https://github.com/user-attachments/assets/0b2f3098-b19d-4bb0-9cc4-6d034858de06)
-*A tela onde os usuários inserem seu nome e PIN para acessar o jogo.*
+![Tela de Login](https://github.com/user-attachments/assets/0b2f3098-b19d-4bb0-9cc4-6d034858de06)  
+A tela onde os usuários inserem seu nome e PIN para acessar o jogo.
 
 ### Tela de Jogo
 ![Tela de Jogo](https://github.com/user-attachments/assets/9da865fb-05c6-4cee-bcc6-497efa20ee34)
