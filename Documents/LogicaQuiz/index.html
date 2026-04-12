@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lógica Quiz</title>
+    <link rel="shortcut icon" href="./image/logomarca.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Lógica Quiz</h1>
+        </header>
+
+        <!-- Tela de Login -->
+        <main id="loginArea">
+            <form id="loginForm">
+                <h2>Login</h2>
+                <div class="form-group">
+                    <label for="username">NOME</label>
+                    <input type="text" id="username" name="username" placeholder="Digite seu nome" required>
+                </div>
+                <div class="form-group">
+                    <label for="userCode">PIN (9 dígitos)</label>
+                    <input type="text" id="userCode" name="userCode" placeholder="000000000" pattern="\d{9}" required>
+                </div>
+                <button type="submit" id="loginButton">Entrar</button>
+            </form>
+            <div class="login-footer">
+                <p>Desenvolvido para fins educacionais</p>
+            </div>
+        </main>
+
+        <!-- Instruções do Jogo (Inicialmente escondido) -->
+        <section id="instructions" class="hidden">
+            <h2>Instruções do Jogo</h2>
+            <p>Bem-vindo ao Lógica Quiz! O objetivo do jogo é responder corretamente às perguntas sobre lógica proposicional.</p>
+            <p>Quando você clicar em "Iniciar Jogo", uma pergunta será exibida com várias opções de resposta.</p>
+            <p>Escolha a resposta que você acha correta clicando no botão correspondente.</p>
+            <p>Você tem 30 segundos para responder cada pergunta.</p>
+            <button id="startButton">Iniciar Jogo</button>
+        </section>
+
+        <!-- Área do Jogo (Inicialmente escondida) -->
+        <main id="gameArea" class="hidden">
+            <div id="questionContainer">
+                <h2 id="questionTitle">Pergunta</h2>
+                <div id="optionsContainer">
+                    <!-- Opções serão inseridas dinamicamente via JS -->
+                </div>
+                <div id="feedbackMessage"></div>
+            </div>
+            <div id="scoreBoard">
+                <p id="score">Pontos: 0</p>
+                <p id="timeLeft">Tempo: 30s</p>
+            </div>
+        </main>
+
+        <!-- Tela de Ranking (Inicialmente escondida) -->
+        <main id="rankingArea" class="hidden">
+            <h2>Ranking</h2>
+            <ul id="rankingList">
+                <!-- Lista de rankings será inserida dinamicamente -->
+            </ul>
+            <button id="restartButton">Jogar Novamente</button>
+        </main>
+
+        <footer>
+            <p>&copy; <span id="year"></span> Lógica Quiz</p>
+        </footer>
+    </div>
+
+    <script src="js/script.js"></script>
+    <script>
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>
