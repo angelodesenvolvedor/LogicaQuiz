@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
 
 body { 
-    background: linear-gradient(135deg, #e0eafc 0%, #cfdef3 100%); /* Gradiente suave no fundo */
+    background: linear-gradient(135deg, #e0eafc 0%, #cfdef3 100%); 
     font-family: 'Inter', -apple-system, sans-serif; 
     margin: 0; 
     padding: 0; 
